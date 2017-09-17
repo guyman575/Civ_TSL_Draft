@@ -35,7 +35,7 @@ def _get_pick():
     correct = None
     while correct != 'y':
         pick = None
-        while not pick:
+        while pick is None:
             try:
                 pick = int(input("Chose a civ (enter number): "))
             except ValueError:
